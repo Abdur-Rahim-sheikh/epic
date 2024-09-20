@@ -9,6 +9,8 @@
 7. [Laws of set theory](#laws-of-set-theory)
 8. [Difference and symmetric difference](#difference-and-symmetric-difference)
 9. [Cartesian product of sets](#cartesian-product-of-sets)
+10. [Russell's Paradox](#russells-paradox)
+11. [Axiom of choice](#axiom-of-choice)
 
 ### What is set?
 A collection of distinct objects
@@ -82,3 +84,10 @@ The Cartesian product of two sets A and B is the set of all possible ordered pai
 * A × B = {(a, b) | a ∈ A and b ∈ B}.
 * Example: If A = {1, 2} and B = {3, 4}, then A × B = {(1, 3), (1, 4), (2, 3), (2, 4)}.
 **Note**: The Cartesian product of two sets A and B is not commutative, i.e., A × B ≠ B × A. ie. (a, b) ≠ (b, a).
+
+### Russell's Paradox
+Russell's paradox is a statement that leads to a contradiction. It is named after the philosopher and mathematician Bertrand Russell. The paradox arises when we consider the set of all sets that do not contain themselves. If such a set exists, it leads to a contradiction.
+* A: {x | x ∉ x} => A ∈ A if A ∉ A and A ∉ A if A ∈ A. This is a contradiction.
+
+### Axiom of choice
+The axiom of choice is an axiom of set theory that states that for any collection of pairwise non-empty sets, there exists a function that selects exactly one element from each set. It is used to make choices from infinitely many sets. The axiom of choice is independent of the other axioms of set theory.
