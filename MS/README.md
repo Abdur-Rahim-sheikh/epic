@@ -7,6 +7,8 @@
 5. [Power set](#power-set)
 6. [Operations on sets](#operations-on-sets)
 7. [Laws of set theory](#laws-of-set-theory)
+8. [Difference and symmetric difference](#difference-and-symmetric-difference)
+9. [Cartesian product of sets](#cartesian-product-of-sets)
 
 ### What is set?
 A collection of distinct objects
@@ -55,11 +57,28 @@ The power set of a set is the set of all possible subsets of a set. It is denote
     * Example: If U = {1, 2, 3, 4, 5} and A = {1, 2, 3}, then A' = {4, 5}.
 5. **Disjoint sets**: Two sets are said to be disjoint if they have no elements in common.
     * Example: If A = {1, 2, 3} and B = {4, 5}, then A and B are disjoint sets.
+    * Trick Question: A set of non-negative integers and a set of non-positive integers are `not` disjoint sets.
 6. **Pairwise disjoint sets**: A collection of sets is said to be pairwise disjoint if every pair of sets in the collection is disjoint.
     * Example: If A = {1, 2}, B = {3, 4}, and C = {5, 6}, then A, B, and C are pairwise disjoint sets.
 
 ### Laws of set theory
-1. **Commutative laws**: A ∪ B = B ∪ A and A ∩ B = B ∩ A
-2. **Associative laws**: A ∪ (B ∪ C) = (A ∪ B) ∪ C and A ∩ (B ∩ C) = (A ∩ B) ∩ C
-3. **Distributive laws**: A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C) and A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
+1. **Commutative laws**: `A ∪ B` = B ∪ A and A ∩ B = B ∩ A
+2. **Associative laws**: `A ∪ (B ∪ C)` = (A ∪ B) ∪ C and A ∩ (B ∩ C) = (A ∩ B) ∩ C
+3. **Distributive laws**: `A ∪ (B ∩ C)` = (A ∪ B) ∩ (A ∪ C) and A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
 4. **Identity laws**: A ∪ ∅ = A and A ∩ U = A
+5. **Complement laws**: A ∪ A' = U and A ∩ A' = ∅
+6. **De Morgan's laws**: (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'
+
+### Difference and symmetric difference
+1. **Difference**: The difference of two sets A and B is the set of elements that are in A but not in B. It is denoted by A - B or A \ B.
+    * Example: If A = {1, 2, 3} and B = {3, 4, 5}, then A - B = {1, 2}.
+2. **Symmetric difference**: The symmetric difference of two sets A and B is the set of elements that are in A or in B but not in both. It is denoted by A Δ B or A ⊕ B. Where 
+    * `A Δ B = (A - B) ∪ (B - A)`.
+    * `A Δ B = (A ∪ B) - (A ∩ B)`.
+    * Example: If A = {1, 2, 3} and B = {3, 4, 5}, then A Δ B = {1, 2, 4, 5}.
+
+### Cartesian product of sets
+The Cartesian product of two sets A and B is the set of all possible ordered pairs (a, b) where a is an element of A and b is an element of B. It is denoted by A × B.
+* A × B = {(a, b) | a ∈ A and b ∈ B}.
+* Example: If A = {1, 2} and B = {3, 4}, then A × B = {(1, 3), (1, 4), (2, 3), (2, 4)}.
+**Note**: The Cartesian product of two sets A and B is not commutative, i.e., A × B ≠ B × A. ie. (a, b) ≠ (b, a).
