@@ -11,6 +11,7 @@
 9. [Cartesian product of sets](#cartesian-product-of-sets)
 10. [Russell's Paradox](#russells-paradox)
 11. [Axiom of choice](#axiom-of-choice)
+12. [Relations](#relations)
 
 ### What is set?
 A collection of distinct objects
@@ -91,3 +92,10 @@ Russell's paradox is a statement that leads to a contradiction. It is named afte
 
 ### Axiom of choice
 The axiom of choice is an axiom of set theory that states that for any collection of pairwise non-empty sets, there exists a function that selects exactly one element from each set. It is used to make choices from infinitely many sets. The axiom of choice is independent of the other axioms of set theory.
+
+### Relations
+A relation / binary relation R from set A to set B is a subset of A × B. It is denoted by R ⊆ A × B.
+    * note: | A × B | = | A | * | B |
+    - **Reflexive relation**: a R a for all a ∈ A.
+    - **Symmetric relation**: if whenever a R b, then b R a.
+    - **Transitive relation**: if a R b and b R c, then a R c.
