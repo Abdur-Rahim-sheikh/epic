@@ -14,6 +14,8 @@
 12. [Relations or Binary Relations](#relations-or-binary-relations)
 13. [Equivalence relation](#equivalence-relation)
 14. [Partition of a set](#partition-of-a-set)
+15. [Function of set](#function-of-set)
+16. [Composition and Inverse of functions](#composition-and-inverse-of-functions)
 
 ### What is set?
 A collection of distinct objects
@@ -114,3 +116,19 @@ A partition of a set A is a collection of non-empty subsets of A such that every
 
 1. **Theorem**: Let R be an equivalence relation on a non-empty set A and let a, b ∈ A. Then either [a] = [b] if and only if a R b.
      - [a] = [b] or [a] ∩ [b] = ∅.
+
+### Function of set
+A function f from set A to set B is a relation from A to B such that for every element a in A, there is exactly one element b in B such that (a, b) ∈ f. It is denoted by f: A → B.
+* A is called the domain of the function f.
+* B is called the codomain of the function f. 
+    - If two distinct elements in A are mapped to different elements in B, then the function is called `one-to-one or injective`.
+    - If every element in B is mapped to by some element in A, then the function is called `onto or surjective`. 
+    - If a function is both one-to-one and onto, then it is called `bijective`.
+        - A bijective function _f_ from A to A is called a permutation of A.
+
+### Composition and Inverse of functions
+1. If _f_ and _g_ injective, then _g_ o _f_ is injective.
+2. If _f_ and _g_ surjective, then _g_ o _f_ is surjective.
+3. If _f_ and _g_ bijective, then _g_ o _f_ is bijective.
+4. If _f_ is bijective than _f_^-1 exists and it is also bijective.
+5. Two sets have the same cardinality if there exists a bijective function between them.
