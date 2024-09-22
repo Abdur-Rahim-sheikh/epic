@@ -132,3 +132,7 @@ A function f from set A to set B is a relation from A to B such that for every e
 3. If _f_ and _g_ bijective, then _g_ o _f_ is bijective.
 4. If _f_ is bijective than _f_^-1 exists and it is also bijective.
 5. Two sets have the same cardinality if there exists a bijective function between them.
+6. Let _f_ : A → B be a function.
+    - If _f_ is injective, then |A| ≤ |B|.
+    - If _f_ is surjective, then |A| ≥ |B|.
+    - If _f_ is bijective, then |A| = |B|.
