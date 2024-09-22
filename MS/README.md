@@ -11,7 +11,9 @@
 9. [Cartesian product of sets](#cartesian-product-of-sets)
 10. [Russell's Paradox](#russells-paradox)
 11. [Axiom of choice](#axiom-of-choice)
-12. [Relations](#relations)
+12. [Relations or Binary Relations](#relations-or-binary-relations)
+13. [Equivalence relation](#equivalence-relation)
+14. [Partition of a set](#partition-of-a-set)
 
 ### What is set?
 A collection of distinct objects
@@ -93,9 +95,22 @@ Russell's paradox is a statement that leads to a contradiction. It is named afte
 ### Axiom of choice
 The axiom of choice is an axiom of set theory that states that for any collection of pairwise non-empty sets, there exists a function that selects exactly one element from each set. It is used to make choices from infinitely many sets. The axiom of choice is independent of the other axioms of set theory.
 
-### Relations
+### Relations or Binary Relations
 A relation / binary relation R from set A to set B is a subset of A × B. It is denoted by R ⊆ A × B.
-    * note: | A × B | = | A | * | B |
-    - **Reflexive relation**: a R a for all a ∈ A.
-    - **Symmetric relation**: if whenever a R b, then b R a.
-    - **Transitive relation**: if a R b and b R c, then a R c.
+- **Reflexive relation**: a R a for all a ∈ A.
+- **Symmetric relation**: if whenever a R b, then b R a.
+- **Transitive relation**: if a R b and b R c, then a R c.
+**Note: | A × B | = | A | * | B |**
+
+### Equivalence relation
+A relation R on a set A is an equivalence relation if it is reflexive, symmetric, and transitive.
+    
+### Partition of a set
+A partition of a set A is a collection of non-empty subsets of A such that every element of A is in exactly one of the subsets.
+ * Example: Let S = {1, 2, 3, 4, 5, 6}. 
+                R = {(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (1,4), (2,3), (2,6), (3,2), (3,6), (4,1), (6, 2), (6, 3)}.
+
+    Then R is an equivalence relation on S. The equivalence classes are [1] = {1, 4}, [2] = {2, 3, 6}, [5] = {5}., [3] = [6] = [2] and [1] = [4].
+
+1. **Theorem**: Let R be an equivalence relation on a non-empty set A and let a, b ∈ A. Then either [a] = [b] if and only if a R b.
+     - [a] = [b] or [a] ∩ [b] = ∅.
