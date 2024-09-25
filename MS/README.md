@@ -1,5 +1,5 @@
 ## Math and Statistics
-
+0. [Meaning of sign about numbers](#meaning-of-sign-about-numbers)
 1. [What is set?](#what-is-set)
 2. [Set notations](#set-notations)
 3. [Cardinality of a set](#cardinality-of-a-set)
@@ -16,6 +16,29 @@
 14. [Partition of a set](#partition-of-a-set)
 15. [Function of set](#function-of-set)
 16. [Composition and Inverse of functions](#composition-and-inverse-of-functions)
+
+### Meaning of sign about numbers
+1. **C**: The set of complex numbers.
+    - `a + bi`, where a and b are real numbers and i is the imaginary unit.
+2. **R**: The set of real numbers.
+    - {...., -1, -0.5, 0, 0.5, 1,.......}
+3. **R+**: The set of positive real numbers.
+    - {..., 0.5, 1,......}
+4. **Z**: The set of integers.
+    - {......, -1, 0, 1, .......}
+5. **Z+**: The set of positive integers.
+    - {1,2, 3,......}
+6. **N**: The set of natural numbers.
+    - {1, 2, 3, .......}
+7. **N+**: The set of positive natural numbers.
+    - {1, 2, 3, .......}
+8. **Q**: The set of rational numbers.
+    - {p/q | p, q ∈ Z and q ≠ 0}
+9. **Q+**: The set of positive rational numbers.
+    - {p/q | p, q ∈ Z+}
+
+
+
 
 ### What is set?
 A collection of distinct objects
