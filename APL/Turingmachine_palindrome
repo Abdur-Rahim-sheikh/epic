@@ -1,0 +1,50 @@
+# Accepts palindromes made of the symbols 'a' and 'b'
+input: 'cabbac' # try a, ab, bb, babab
+blank: ' '
+start state: start
+synonyms:
+  accept: {R: accept}
+  reject: {R: reject}
+# A palindrome is either the empty string, a single symbol,
+# or a (shorter) palindrome with the same symbol added to both ends.
+table:
+  start:
+    a: {write: ' ', R: haveA}
+    b: {write: ' ', R: haveB}
+    c: {write: ' ', R: haveC}
+    ' ': accept # empty string
+  haveA:
+    [a,b,c]: R
+    ' ': {L: matchA}
+  haveB:
+    [a,b,c]: R
+    ' ': {L: matchB}
+  haveC:
+    [a,b,c]: R
+    ' ': {L: matchC}
+  matchA:
+    a: {write: ' ', L: back} # same symbol at both ends
+    b: reject
+    c: reject
+    ' ': accept # single symbol
+  matchB:
+    a: reject
+    c: reject
+    b: {write: ' ', L: back} # same symbol at both ends
+    ' ': accept # single symbol
+  matchC:
+    a: reject
+    b: reject
+    c: {write: ' ', L: back}
+    ' ': accept
+  back:
+    [a,b,c]: L
+    ' ': {R: start}
+  accept:
+  reject:
+
+
+# Exercise:
+
+# • Modify the machine to include 'c' in the symbol alphabet,
+#   so it also works for strings like 'cabbac'.
