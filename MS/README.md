@@ -29,7 +29,8 @@
 5. **Z+**: The set of positive integers.
     - {1,2, 3,......}
 6. **N**: The set of natural numbers.
-    - {1, 2, 3, .......}
+    - {0, 1, 2, 3, .......}
+    - some defines {1, 2, 3, .......} as natural numbers.
 7. **N+**: The set of positive natural numbers.
     - {1, 2, 3, .......}
 8. **Q**: The set of rational numbers.
