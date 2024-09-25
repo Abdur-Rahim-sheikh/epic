@@ -5,7 +5,7 @@ link to the doc: [lab1](https://docs.google.com/document/d/1-sXsrMe71SvzVxSF8bey
 3. [What language was named after the first ever programmer? Is it still used today? For what applications? What are the companies developing compilers for this language?](#task3)
 4. [LAPACK is one of the modern standard libraries for linear algebra computations (employed, e.g., by Python’s NumPy package and by many others). What language is its reference implementation written in? Which other Python packages use some code written in that language?](#task4)
 5. [Consider Jensen’s device that was mentioned in the slides. What are its pitfalls (not considering call-by-name inefficiency in general)? What are some other programming applications of call-by-name if it is supported by a language?](#task5)
-
+6. [Languages either turing complete or not](#task6)
 
 
 
@@ -34,3 +34,15 @@ LAPACK is one of the modern standard libraries for linear algebra computations (
 Consider [Jensen’s device](https://en.wikipedia.org/wiki/Jensen%27s_device) that was mentioned in the slides. What are its pitfalls (not considering call-by-name inefficiency in general)? What are some other programming applications of call-by-name if it is supported by a language?
 
 **Response:** Jensen's device is a programming technique that allows the definition of recursive functions in languages that do not support recursion. The pitfall of Jensen's device is that it can be difficult to understand and maintain. Some other programming applications of call-by-name are lazy evaluation, memoization, and implementing control structures like loops and conditionals.
+
+### Task 6
+Languages either turing complete or not
+| Language | Turing Complete | Why not? |
+| --- | --- | --- |
+| Python | &check; | ... |
+| C | &check; | ... |
+| Java | &check; | ... |
+| JavaScript | &check; | ... |
+| HTML | &cross; | Dose not have `Conditional Logic`, `Loops`, `Memory Manipulation` |
+| CSS | &cross; | Dose not have `Conditional Logic`, `Loops`, `Limited State Management` |
+| SQL | &cross; | Basic sql can not implement all algorithm, but with extension yes |
