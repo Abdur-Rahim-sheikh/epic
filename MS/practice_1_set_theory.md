@@ -52,4 +52,29 @@ All question for this practice are listed [here](https://elearn.epam.com/courses
         - Then B can be, {1,2,3,4,5}
 
     - **Note**: Did you see the difference first one asks for subset and second one asks for element of power set. So, be careful while answering.
+
+8. For set Q of rational numbers and set I of irrational numbers and the universal set R of real numbers, determine the following
+    - Q ∩ I
+        - $\emptyset$
+    - Q ∪ I
+        - R
+    - Q - I
+        - Q
+    - I - Q
+        - I
+    - $Q \oplus I$
+        - R
+    - $\overline{Q}$
+        - I
+    - $\overline{I}$
+        - Q
+
+9. For two sets A and B, which of the followings are equal.
+    - $A \oplus B$ , $(A - B) \oplus (B - A)$, $(A \cup B) \oplus (A \cap B)$
+        - All are equal.
+        - We know $A \oplus B$ means elements that are in A or B but not in both or the set of uncommon elements in A and B.
+        - $(A - B) \oplus (B - A)$ = $(A-B) \cup (B-A)$ taking uncommon of two disjoin sets is just union = $A \oplus B$
+        - $(A \cup B) \oplus (A \cap B)$ = $(A \cup B) - (A \cap B)$ = $A \oplus B$
+
+
         

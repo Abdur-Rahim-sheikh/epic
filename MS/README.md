@@ -37,6 +37,8 @@
     - {p/q | p, q ∈ Z and q ≠ 0}
 9. **Q+**: The set of positive rational numbers.
     - {p/q | p, q ∈ Z+}
+10. **I**: The set of irrational numbers.
+    - {$\sqrt{2}, \sqrt{3}, \pi, e$, .......}
 
 
 
@@ -104,8 +106,9 @@ The power set of a set is the set of all possible subsets of a set. It is denote
 1. **Difference**: The difference of two sets A and B is the set of elements that are in A but not in B. It is denoted by A - B or A \ B.
     * Example: If A = {1, 2, 3} and B = {3, 4, 5}, then A - B = {1, 2}.
 2. **Symmetric difference**: The symmetric difference of two sets A and B is the set of elements that are in A or in B but not in both. It is denoted by A Δ B or A ⊕ B. Where 
-    * `A Δ B = (A - B) ∪ (B - A)`.
-    * `A Δ B = (A ∪ B) - (A ∩ B)`.
+    * $A \oplus B = (A - B) ∪ (B - A)$.
+    * $A \oplus B = (A ∪ B) - (A ∩ B)$.
+    * $(A - B) \oplus (B - A) = (A - B) ∪ (B - A)$.
     * Example: If A = {1, 2, 3} and B = {3, 4, 5}, then A Δ B = {1, 2, 4, 5}.
 
 ### Cartesian product of sets
