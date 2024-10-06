@@ -1,5 +1,7 @@
 ## RAM is the first approximation of computer program similar to assembly language.
 
+
+#### RAM is a turing complete machine.
 - There is an input tape, there is an output tape, and there are registers. 
 In the registers, you can store any number. You can only read from the 
 input tape and only write to the output tape.
