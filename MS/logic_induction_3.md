@@ -134,3 +134,46 @@ Answer:
     - $1 - 1/2 + 1/2 - 1/3 + 1/3 - 1/4 + ... + 1/n - 1/(n+1)$
     - $1 - 1/(n+1)$
 
+8. Find the value of the sum, $1^2 + 3^2 + 5^2 + ..... + 99^2$
+    - $\sum_{k=1}^{50} (2k-1)^2$
+    - $\sum_{k=1}^{50} 4k^2 - 4k + 1$
+    - $4\sum_{k=1}^{50} k^2 - 4\sum_{k=1}^{50} k + \sum_{k=1}^{50} 1$
+    - we know, $\sum_{k=1}^{n} k^2 = n(n+1)(2n+1)/6$ , $\sum_{k=1}^{n} k = n(n+1)/2$
+    - $4*50*51*101/6 - 4*50*51/2 + 50$
+    - $80850$
+
+9. For which `n` that is true?
+    - $n^2 > 2n + 1$
+        - $n^2 - 2n - 1 > 0$
+        - $ n > 1 + \sqrt{2}$
+       
+    - $2^n > n^2$
+        - n = 1, 
+            - LHS = 2, RHS = 1 - True
+        - n = 2,
+            - LHS = 4, RHS = 4 - False
+        - n = 3,
+            - LHS = 8, RHS = 9 - False
+        - n = 4,
+            - LHS = 16, RHS = 16 - False
+        - n = 5,
+            - LHS = 32, RHS = 25 - True
+        n>4
+
+    - $n! > 2^n$
+        - $n \geq 4$
+
+10. Prove that $\frac{1}{n + 1} + \frac{1}{n + 2}.....\frac{1}{3n + 1} > 1$
+    - let n = 1
+        - $1/2 + 1/3 + 1/4 = 13/12 > 1$
+    So if we increase n, the value adds up and becomes greater, so no chance of becoming less than or equal to 1.
+    - Proved
+
+11. prove that 111...111 (243 digits) is divisible by 243.
+    - Don't know how to prove this.
+
+12. Prove that a regular triangle can be dissected into `n` smaller regular triangles if `n` is not less than 7.
+    - draw and prove
+
+13. How many parts do `n` straight lines in general position divide the plane into? (no two lines are parallel and no three lines pass through the same point)
+    - $n(n+1)/2 + 1$
