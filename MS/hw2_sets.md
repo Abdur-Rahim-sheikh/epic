@@ -18,4 +18,16 @@
     - $f(x) = 2^x$ is not a bijection because it is `not surjective`.
         - $f(x) = 0$ has no solution. Because $2^x$ is always positive.
 
-        
+2. Choose one true proposition.
+- There is no function $f: z \longrightarrow z$ that is injective and surjective.
+    - False because the identity function $f(x) = x$ is both injective and surjective.
+- There is no function $f: z \longrightarrow z$ that is injective but not surjective.
+    - True
+- There is no function $f: z \longrightarrow z$ that is surjective but not injective.
+    - False, $f(x) = \lfloor x \rfloor/2$ is surjective but not injective. 
+- There is no function $f: z \longrightarrow z$ that is neither injective nor surjective.
+    - False, $f(x) = 0$  or $f(x) = n^2$ is neither injective nor surjective.
+- All the four previous propositions are false.
+
+
+
