@@ -23,3 +23,15 @@ determine which of the following sets has cardinality 2:
 - It can be accepted as true. //This is the right answer
 - This axiom is about existence of the empty set.
 - This axiom is about existence of infinite sets.
+
+4. At a university, each of 120 students chose at least one course in Mathematics or Computer Science. It is known that 80 students chose courses in Computer Science and 35 students chose courses in both Mathematics and Computer Science. How many students chose courses in Mathematics?
+
+- Let A be the set of mathematics and B be the set of computer science. 
+- $|A \cup B| = |A| + |B| - |A \cap B|$
+- 120 = |A| + 80 - 35
+- |A| = 75
+
+5. Let A = {1, 2} and B = {3, 4, 5} be two sets. What is the cardinality of the set $(A \cup \{ \emptyset \}) \times \mathcal{p}(B)$
+ - $(A \cup \{ \emptyset \}) = {1, 2, \emptyset}$ = 3
+ - $\mathcal{p}(B)$ = 8$
+    - $3 \times 8 = 24$
