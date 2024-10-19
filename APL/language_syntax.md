@@ -24,3 +24,24 @@ To define a formal language, we use grammers. A grammer G = (N, T, P, S) consist
 - **Type 1:** Context-sensitive grammars
 - **Type 2:** Context-free grammars, most common in programming languages
 - **Type 3:** Regular grammars
+
+#### Derivation and Parse tree
+- **Derivation:** A sequence of grammar rule applications to get a string.
+    - **Leftmost derivation:** The leftmost non-terminal is replaced at each step.
+    - **Rightmost derivation:** The rightmost non-terminal is replaced at each step.
+- **Parse tree:** A tree representation of the derivation.
+    - **Ambiguity:** When a string has more than one parse tree.
+    - **Precedence:** Rules to resolve ambiguity.
+    - **Grammar rewriting:** To remove ambiguity.
+
+#### source code processing
+Two stages of source code processing:
+- **Lexical analysis:** Converts the source code into tokens.
+- **Syntax analysis:** Converts the tokens into a parse tree.
+
+#### Top down parsing
+- **Recursive descent parsing:** Simple but often inefficient. Struggles with left recursion.
+- **LL(k) parsing:** `Predictive parsing` using a lookahead of `k` tokens to choose the production rule.
+
+#### PEG vs CFG
+- **PEG:** Parsing Expression Grammar uses a deterministic approach of parsing which ensures that there is no ambiguity producing only one valid parse tree.
