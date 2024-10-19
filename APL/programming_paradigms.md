@@ -32,4 +32,20 @@
         - mutual exclusion
             - Deadlock, livelock, and starvation
         - concurrent control abstractions (recent addition support reliability)
-        
+
+4. Event-Driven Programming
+    - The programmer writes programs that respond to events. Events can be user actions, such as clicking a button, or system events, such as a timer expiring.
+    - Key concepts:
+        - events
+        - event listeners
+
+5. Functional Programming
+    - The model of computation is the application of functions to arguments.
+    - key concepts
+        - Expressions
+        - Functions
+        - parametric polymorphism
+        - data abstraction
+        - lazy evaluation
+
+<img src="paradigm_comparison.png" alt="paradigm_comparison" width="500" height="450" style="filter: brightness(90%);">
