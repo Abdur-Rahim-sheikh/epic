@@ -48,4 +48,32 @@
         - data abstraction
         - lazy evaluation
 
+        - Church-Rosser property,
+            - If a term `t` can be reduced to terms `u` and `v`, then there exists a term `w` that `u` and `v` can be reduced to.
+            - So the order of evaluation does not matter.
+            - This property is also known as the diamond property.
+            - Then the term holds "confluence" / "church-rosser property"
+            - Church-rosser property is not possessed by any programming language that allows side effects. 
+
+
 <img src="paradigm_comparison.png" alt="paradigm_comparison" width="500" height="450" style="filter: brightness(90%);">
+
+6. Scripting
+    - The programmer writes scripts that automate tasks. Scripts are usually interpreted rather than compiled.
+    - Key concepts:
+        - scripts
+        - interpreted languages
+        - automation
+7. Constraint-Based Programming
+    - The programmer defines constraints that must be satisfied to solve a problem. The computer uses constraint satisfaction algorithms to find a solution.
+    - Key concepts:
+        - assertions
+        - horn clauses
+        - relations
+
+8. Multi-paradigm programming
+    - The programmer uses multiple programming paradigms in the same program. This can be done to take advantage of the strengths of different paradigms.
+    - Python
+        - object-oriented, scripting, and functional programming, async, parallel, and distributed programming.
+    - Scala
+        - object-oriented and functional programming
