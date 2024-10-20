@@ -44,21 +44,36 @@ flowchart LR
 - **Bootstrapping:** The process of writing a compiler in the language that it compiles. Which is called self-hosting.
 - How It's done? Initially, a compiler is written in another language. Then the compiler is compiled using the existing compiler. The new compiler is then used to compile itself.
 
+- Even in bootstrapping, the first compiler needs to be written in other established language. Let's say python built the first compiler of a new language called ChukEm. Now in chukEm language we desgined a very basic compiler program and compiled it with the python compiler. 
+As it's the basic one it's very inefficient and cannot understand complex logic. Now we wrote another compiler CE-v2, which the version one is able to compile but it has more capability and efficiency. But this time it was self-hosted. And gradually we improve the power of the self-hosted compiler.
+
 #### Just in Time Compilation (JIT)
 - **Just in Time Compilation:** The source code is compiled at runtime. It is used in virtual machines like Java, .NET, etc.
+- Explanation:
+    - JVM compiles the source code into bytecode.
+    - As the execution proceeds, the JVM profiles the code and identifies the `hot methods` which are executed frequently.
+    - The JVM then uses the JIT compiler to compile the hot methods into native machine code.
+    - The native machine code is then executed for that method im
+
 
 ```mermaid
-flowchart TD;
-    java([Java Program]) -- Java Compiler --> byte(Java Byte Code);
-    byte --> BI(Byte Code Interpreter);
-    subgraph compilation;
-        I[/Input/] --> BI;
-        BI --> O[/Output/]
-    end
-    subgraph JIT[Just in Time Compilation];
-        direction LR;
-        Input --> ML(Machine Language)
-        ML --> Output
-    end
-    byte --> ML
+flowchart TB;
+
+subgraph MainFlow
+    java([Java Program]) -- Compile --> bytecode[Java Bytecode];
+    bytecode --> Interpreter;
+    Interpreter --> ExecDecision{Has Native Code?};
+    ExecDecision -- Yes --> ExecuteCompiled[Execute Stored native Code];
+    ExecDecision -- No --> ExecuteInterpreted[Execute Interpreted Code];
+    ExecuteCompiled & ExecuteInterpreted --> Execution;
+    Execution --> Output[(Output)];
+end
+
+subgraph HotMethod[Hot Method]
+    Profiler -- "If Method Hot?" --> JIT[Just in Time Compiler];
+    JIT -- "Compile to Native Code" --> NativeCode[Native Machine Code & Store in Interpreter];
+end
+
+Interpreter -- Execute's Periodically --> Profiler;
+NativeCode --store --> Interpreter;
 ```
