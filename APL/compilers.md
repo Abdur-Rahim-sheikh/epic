@@ -53,7 +53,7 @@ As it's the basic one it's very inefficient and cannot understand complex logic.
     - JVM compiles the source code into bytecode.
     - As the execution proceeds, the JVM profiles the code and identifies the `hot methods` which are executed frequently.
     - The JVM then uses the JIT compiler to compile the hot methods into native machine code.
-    - The native machine code is then executed for that method im
+    - The native machine code is then executed for that method instead of the bytecode.
 
 
 ```mermaid
