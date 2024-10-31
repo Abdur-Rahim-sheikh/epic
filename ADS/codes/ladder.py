@@ -1,10 +1,16 @@
+dp = dict()
 def dfs(n, allowed):
-    if n==0 or allowed==0:
+    if n==0:
         return 1
-    
-    ans = 1
-    for x in range(1,allowed):
-        ans+=dfs(n-x, min(x-1,n-x))
+    if allowed==0:
+        return 0
+    if (n,allowed) in dp:
+        return dp[(n,allowed)]
+    ans = 0
+    for x in range(1,allowed+1):
+        if n-x>=0:
+            ans+=dfs(n-x, x-1)
+    dp[(n,allowed)] = ans
     return ans
 
 # inputs
