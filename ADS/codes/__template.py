@@ -1,5 +1,7 @@
+import sys
+
 def get_integer_array(m=1, n=1):
-    inputs = list(map(int, input().split()))
+    inputs = list(map(int, sys.stdin.read().split()))
     if len(inputs) != m * n:
         raise ValueError("The number of inputs does not match the expected m*n dimensions.")
     
