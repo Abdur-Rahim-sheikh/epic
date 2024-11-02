@@ -24,7 +24,7 @@ def held_karp_tsp(matrix):
             for j in range(n):
                 if check(mask, j): continue
                 new_mask = on(mask, j)
-                val = dp[mask][i] + matrix[i][j]
+                val = dp[i][mask] + matrix[i][j]
                 if dp[j][new_mask] > val:
                     dp[j][new_mask] = val
                     prev[j][new_mask] = i
@@ -39,11 +39,11 @@ def held_karp_tsp(matrix):
     path = []
     mask = (1<<n) - 1
     while last!=-1:
-        path.append(last)
+        path.append(last+1)
         next = prev[last][mask]
         mask = mask ^ (1<<last)
         last = next
-
+    path.reverse()
     return path, shortest
 
 
