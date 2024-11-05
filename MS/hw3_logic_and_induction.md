@@ -22,6 +22,21 @@
 Summary, 1, 2, 3 are True and 4, 5 are False.
 
 ### Construct the truth tables for the logical expressions below.
-- $(\neg A \Longrightarrow B) \lor (A \land \neg B)$
-    - Start solution
-- $(A \lor B) \Longrightarrow (\neg A \land B)$
+- $(\overline{A} \Longrightarrow B) \lor (A \land \overline{B})$
+    - | A | B | $\overline{ A}$ | $\overline{ A} \Rightarrow B = x$ | $A \land \overline{ B} = y$ | $x \lor y$ |
+      |---|---|---------|---------------------------|------------------|-------------------------------------------------|
+      | T | T | F       | T                         | F                | T                                               |
+      | T | F | F       | T                         | T                | T                                               |
+      | F | T | T       | T                         | F                | T                                               |
+      | F | F | T       | F                         | F                | F                                               |
+- $(A \lor B) \Longrightarrow (\overline{ A} \land B)$
+    - | A | B | $\overline{ A}$ | $A \lor B = x$ | $\overline{ A} \land B = y$ | $x \Rightarrow y$ |
+      |---|---|---------|-----------------|---------------------------|------------------|
+      | T | T | F       | T               | F                         | F                |
+      | T | F | F       | T               | F                         | F                |
+      | F | T | T       | T               | T                         | T                |
+      | F | F | T       | F               | F                         | T                |
+
+### What is the greatest number of parts that 100 circles can cut a plane into?
+- The greatest number of parts that 100 circles can cut a plane into is 100*99/2 + 1 = 4951.
+- Be
