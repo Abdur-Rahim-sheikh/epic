@@ -40,3 +40,14 @@ Summary, 1, 2, 3 are True and 4, 5 are False.
 ### What is the greatest number of parts that 100 circles can cut a plane into?
 - The greatest number of parts that 100 circles can cut a plane into is 100*99/2 + 1 = 4951.
 - Be
+
+### Prove that for any natural number `n` there exists a number which is written with only the digits 3 and 6 and is divisible by $2^n$.
+- Let's prove this by pigeonhole principle.
+- Let's think of binary tree each node having value 3 or 6. So the tree is infinite.
+- But as we know the modulo $2^n$ has finite 0 to $2^n - 1$ values. 
+- So, by pigeonhole principle, reminder of the tree will be repeated after some level and at some point it will cycle back to the same value.
+- So, there exists a number which is written with only the digits 3 and 6 and is divisible by $2^n$.
+
+
+### What is the greatest value of `k` such that the number $1+1 \cdot 1!+2 \cdot 2!+ \ldots + 99 \cdot 99!$ is divisible by $7^k$?
+- Let's find the pattern of the number.
