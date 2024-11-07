@@ -65,3 +65,11 @@ for $p = 7$ and $n = 100$,
 3. $\lfloor 100/(7^3) \rfloor = 0$
 
 So, $v_7(100!) = 14 + 2 = 16$.
+
+### suppose $a_1 = 1, a_2 = 2$ and $a_{n} = 4a_{n-1} - 4a_{n-2}$ for $n \geq 3$. What is the greatest value of k such that the number $a_{100}$ is divisible by $4^k$?
+- Let's find the first few terms of the sequence,
+   - 1, 2, 4, 8, 16, 32, 64, 128, 256, 512
+   - The sequence is power of 2. $a_n = 2^{n-1}$
+   - so $a_{100} = 2^{100-1}$ = $2^{99}$ = $2 \times 4^{49}$ So the greatest value of k is 49, which can divide $a_{100}$.
+
+   Answer is 49.
