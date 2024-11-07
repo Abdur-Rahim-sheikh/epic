@@ -50,4 +50,18 @@ Summary, 1, 2, 3 are True and 4, 5 are False.
 
 
 ### What is the greatest value of `k` such that the number $1+1 \cdot 1!+2 \cdot 2!+ \ldots + 99 \cdot 99!$ is divisible by $7^k$?
-- Let's find the pattern of the number.
+- For n* n! we can write (n+1)! - n!.Because (n+1)! - n! = (n+1)* n! - n! = n!* (n+1-1) = n! * n.
+- So, we can rewrite the sequence,
+S   = $1 + \sum_{n=1}^{99} (n+1)! - n!$
+    = $1 + 100! - 99!+ 99! - 98! + 98! \ldots + 2! - 1!$
+    = $1 + 100! - 1!$
+    = $100!$
+For a factorial value, to find largest `k` such that the number is divisible by $7^k$, we can use Legendre's formula.
+- $v_p(n!) = \sum_{i=1}^{\infty} \lfloor\cfrac{n}{p^i}\rfloor$
+
+for $p = 7$ and $n = 100$,
+1. $\lfloor 100/7 \rfloor = 14$
+2. $\lfloor 100/(7^2) \rfloor = 2$
+3. $\lfloor 100/(7^3) \rfloor = 0$
+
+So, $v_7(100!) = 14 + 2 = 16$.
